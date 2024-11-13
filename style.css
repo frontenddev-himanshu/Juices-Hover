@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofadi+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* juice container */
+.juice-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px #00000056;
+}
+
+/* juice box */
+.juice-box {
+    height: 600px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* items */
+.items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: 0.30s;
+    cursor: pointer;
+}
+
+.j-img img {
+    height: 300px;
+    display: none;
+}
+
+.j-img h4 {
+    font-size: 2.2rem;
+}
+
+.j-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.j-details h4 {
+    font-size: 1.5rem;
+}
+
+.j-details span {
+    font-size: 0.9rem;
+    color: #999999;
+}
+
+.j-details a {
+    text-decoration: none;
+}
+
+.j-details a button {
+    width: 110px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    transition: 0.30s;
+}
+
+.cok-n {
+    color: #4A231D
+}
+
+.orange-n {
+    color: #f1b942;
+}
+
+.lemon-n {
+    color: #DAC053;
+}
+
+.water-n {
+    color: #0D8EE6;
+}
+
+/* hovers */
+
+.juice-box:hover .j-details {
+    position: absolute;
+    bottom: 20px;
+}
+
+.juice-box:hover .items .j-img h4 {
+    display: none;
+}
+
+.juice-box:hover .j-img img {
+    display: block;
+}
+
+.juice-box:hover .cok {
+    background-color: #4A231D !important;
+}
+
+.juice-box:hover .orange {
+    background-color: #F1B942;
+}
+
+.juice-box:hover .lemon {
+    background-color: #DAC053;
+}
+
+.juice-box:hover .water {
+    background-color: #0D8EE6;
+}
+
+.juice-box:hover .j-details {
+    color: #ffffff;
+}
+
+.juice-box:hover .j-details a button {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.juice-box:hover .j-details span {
+    color: #ffffff;
+}
+
+.j-details a button:hover {
+    background-color: #ffffff;
+    color: black !important;
+    border-color: black !important;
+}
+
+/* hovers end */
